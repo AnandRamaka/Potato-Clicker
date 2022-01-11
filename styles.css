@@ -1,0 +1,239 @@
+body{
+    font-family: 'Courier New', monospace;
+
+    animation: bkgColor 14s infinite;
+}
+
+.difBody{
+    animation: bkgBack 14s infinite;
+}
+
+.boostedBody{
+    background-image: url("tenor.gif");
+    background-size: cover;
+}
+
+@keyframes bkgColor {
+    from {
+        background-color: #bf8040;
+    }
+    to {
+        background-color: #4d3319;
+    }
+
+  }
+  @keyframes bkgBack {
+    from {
+        background-color: #4d3319;
+    }
+    to {
+        background-color: #bf8040;
+    }
+
+  }
+.title{
+    font-size: 30px;
+    font-style: bold;
+}
+
+.h1{
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+}
+
+.cookie{
+    width: 40%;
+    height: 40%;
+    min-width: 150px;
+    min-height: 150px;
+    transform: scale(1.0);
+    transition-duration: .2s;
+    margin-top: 20%;
+}
+.cookie:hover{
+    cursor: pointer;
+}
+.cookie:active{
+    transform: scale(.86);
+    transition-duration: .25s;
+}
+
+.main{
+    user-select: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.store{
+    border-style: solid;
+    border-width: 3px;
+    background-color:  #c68c53;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: auto;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+.inventory{
+    background-color: #c68c53;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 2%;
+    margin-left: 5%;
+}
+.highScore{
+    margin-top: 3px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    margin-top: 10px;
+    padding: 0 5px 5px 5px;
+    text-align: center;
+}
+.storeDiv{
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    user-select: none;
+    margin-top: 7px;
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.storeDiv:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: white;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.storeDiv:active{
+    transform: scale(.92);
+    transition-duration: .4s;
+}
+.empProg{
+    background-color: transparent;
+    width: 100%;
+}
+
+.timer{
+    margin-top: 10%;
+    font-size: 40px;
+    color: white;
+}
+
+.heading{
+    width: 60%;
+    background-color: #c68c53;
+    padding-top: .5%;
+    padding-bottom: .5%; 
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    border-style: solid;
+    border-width: 3px;
+    flex: 1;
+    text-align: center;
+}
+
+.numCookies{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.empStore{
+    display: flex;
+}
+
+.ssDiv{
+    padding: 2% 2% 2% 2%;
+    border-style: solid;
+    border-width: 2px;
+    flex: 0 0 50%;
+    user-select: none;
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.ssDiv:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: white;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.ssDiv:active{
+    transform: scale(.92);
+    transition-duration: .4s;
+}
+
+.sellDiv{
+    margin-left: 5px;
+    padding: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    flex: 1;
+    user-select: none;
+    margin-top: 7px;
+    margin-right: 0;
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.sellDiv:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: white;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+.sellDiv:active{
+    transform: scale(.92);
+    transition-duration: .4s;
+}
+
+.achievements{
+    flex: 0 0 25%;
+}
+
+.statistics{
+    flex: 25% 0 0;
+    background-color: #c68c53;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-right: 60px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+}
+
+.achievements{
+    flex:  0 0 25%;
+    background-color: #c68c53;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-right: 30px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+}

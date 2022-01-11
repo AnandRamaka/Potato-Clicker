@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <span class="empStore">
+
+        <div class="heading">
+            <header class="h1"> Potato Clicker </header>
+            <p class="numCookies" id="numCookies"> Number of potatoes: 0 (0p per second) </p>
+            <p class="numCookies" id="highScore"> High Score: 0 </p>
+        </div>
+
+        </div>
+    </span>
+</head>
+
+<body id="body">
+    <audio autoplay loop>
+
+    </audio>
+
+
+    <span class="container">
+        <div class="inventory">
+            <p class="title"> Inventory: </p>
+            <div id="multNum"> Click Multiplier: x1 </div>
+            <div id="empNum"> Workers: 0 </div>
+            <div id="emp2Num"> ??? </div>
+            <div id="emp3Num"> ??? </div>
+            <div id="boostNum"> Boost: Inactive </div>
+            <div id="oMultNum"> Overall Multiplier: x1</div>
+
+        </div>
+        <span>
+            <div class="main">
+                <img class="cookie" src="./images/potato.png" onclick="incCookies();clickSound.play();">
+            </div>
+            <div class="timer" id="boostTimer"> </div>
+        </span>
+        <div class="store">
+            <p class="title"> Store: </p>
+            <div class="storeDiv" id="mult" onclick="incMult();buttonSound.play();"> Increase click mutiplier: 50p
+            </div>
+            <span class="empStore">
+                <div class="ssDiv" id="emp" onclick="incEmp();buttonSound.play();"> Hire worker: 2p </div>
+                <div class="sellDiv" id="empSell" onclick="sellEmp();buttonSound.play();"> Fire: 1p </div>
+            </span>
+            <span class="empStore">
+                <div class="ssDiv" id="emp2" onclick="incEmp2();buttonSound.play();"> ??? - Unlock: 800p </div>
+                <div class="sellDiv" id="emp2Sell" onclick="sellEmp2();buttonSound.play();"> Sell: ??? </div>
+            </span>
+            <span class="empStore">
+                <div class="ssDiv" id="emp3" onclick="incEmp3();buttonSound.play();"> ??? - Unlock: 17000p </div>
+                <div class="sellDiv" id="emp3Sell" onclick="sellEmp3();buttonSound.play();"> Sell: ??? </div>
+            </span>
+            <div class="storeDiv" id="oMult" onclick="incOMult();buttonSound.play();"> Sacrifice potatoes? </div>
+            <div class="storeDiv" id="boost" onclick="cookieBoost();buttonSound.play();"> Buy a boost: 1000p </div>
+        </div>
+    </span>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
